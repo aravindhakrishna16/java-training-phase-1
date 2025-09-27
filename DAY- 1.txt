@@ -1,0 +1,126 @@
+DAY- 1 :
+
+1.Precision and width
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+        public static void main(String [] args)
+ {
+        Scanner sc = new Scanner(System.in);
+        int obj1=sc.nextInt();
+        int obj2= sc.nextInt();
+        System.out.printf("%05d\n",obj1);
+        System.out.printf("%5d",obj2);
+ }
+}
+
+2. Basic new line
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+       System.out.println("Hello world");
+        System.out.println("I am a Student");
+    }
+}
+
+3. Value Performance 2
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int obj1= sc.nextInt();
+        float obj2=sc.nextFloat();
+        System.out.println(obj1);
+        System.out.printf("%.2f\n",obj2);
+    }
+}
+
+4.Float Formation 2
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner (System.in);
+        float obj1 = sc.nextFloat();
+        System.out.printf("%.6f\n",obj1);
+              System.out.printf("%.4f\n",obj1);
+              System.out.printf("%.2f\n",obj1);
+              System.out.printf("%.0f\n",obj1);
+    }
+}
+
+5 Math Functions 2
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        float x=sc.nextFloat();
+        int obj1=sc.nextInt();
+        int obj2=sc.nextInt();
+        int obj3=sc.nextInt();
+        System.out.println((int)Math.floor(x));
+        System.out.println((int)Math.ceil(x));
+        System.out.println((int)Math.sqrt(obj1));
+        System.out.println((int)Math.pow(obj2,obj3));
+        
+        
+    }
+}
+
+6 ATM machine
+
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int amount = sc.nextInt();
+        int[] notes = {500, 100, 50, 20, 10, 5, 2, 1};
+        int[] count = new int[notes.length];
+        for (int i = 0; i < notes.length; i++) {
+            if (amount >= notes[i]) {
+                count[i] = amount / notes[i];  
+                amount = amount % notes[i];   
+            }
+        }
+        System.out.println("Total number of notes:");
+        for (int i = 0; i < notes.length; i++) {
+            System.out.println(notes[i] + " : " + count[i]);
+        }
+    }
+}
+
+
+
+7 C-L0-MOD11-Challenge10
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        String firstWord = input.split(" ")[0];
+        System.out.println("May I know how to learn " + firstWord + "!!!...");
+    }
+}
+
